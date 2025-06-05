@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+:root {
+  --cor-ciano: #00999E;
+  --cor-roxo: #973C8B;
+  --text-seze-s: 16px;
+  --text-size-m: 20px;
+  --text-size-l: 40px;
+  --button-gradient: linear-gradient(0deg, #00C7D1 0%, #009CA5 100%);
+}
+
