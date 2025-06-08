@@ -10,6 +10,7 @@
   --button-gradient: linear-gradient(0deg, #00C7D1 0%, #009CA5 100%);
   --bg-h2: #ffffff85;
   --azul: #0082B2;
+  --bg-custom-gradient:linear-gradient(180deg, #F9F5FD 0%, rgba(207, 203, 209, 0.703846) 42.31%, rgba(149, 146, 151, 0.3) 100%);
 }
 
 * {

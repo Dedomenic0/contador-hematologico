@@ -13,8 +13,8 @@ const Inputs = ({cell, value, keyBoard, total=false} : InputsProps) => {
 
     return ( 
         <div className="flex flex-col items-center">
-            <label htmlFor={cell}>{cell}</label>
-            <input className={total ? style.total : style.couter} type="text" value={value}/>
+            <label>{cell}</label>
+            <p className={total ? style.total : style.couter} >{value}</p>
             <p>{keyBoard}</p>
         </div>
      );

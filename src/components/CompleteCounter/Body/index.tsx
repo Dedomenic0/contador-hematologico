@@ -6,7 +6,7 @@ import { useState } from "react";
 const buttonChecked = [
     {
         id: 1,
-        check: false,
+        check: true,
         total: 100
     },
     {
@@ -23,7 +23,7 @@ const buttonChecked = [
 
 const Body = () => {
 
-    const { cellList, total, setCellList, setTotal, setCellTotalCouter } = useCounter();
+    const { cellList, total, setCellList, setTotal, setCellTotalCouter } = useCounter("full");
 
     const [button, setButton] = useState(buttonChecked)
 

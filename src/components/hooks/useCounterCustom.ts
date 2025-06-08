@@ -1,27 +1,28 @@
 import { useEffect, useState } from "react";
-import { cells, cellsSimple } from "../../types";
+import { type CellsObject } from "../../types";
 
-const useCounter = (type: "full" | "simple" | "custom") => {
-
-    let list = cells;
-
-    if (type === "simple") {
-        list = cellsSimple;
-    }
+const useCounterCustom = () => {
+        const custom = localStorage.getItem("custom");
+        const list = custom ? JSON.parse(custom) : null;
+    
     
     const [cellList, setCellList] = useState(list)
     const [total, setTotal] = useState(0)
     const [cellTotalCouter, setCellTotalCouter] = useState(100)
 
     useEffect(() => {
+        setCellList(list)
+    },[custom])
+
+    useEffect(() => {
         function onKeyPress(event: KeyboardEvent) {
-            cellList.forEach((e) => {
+            cellList.forEach((e: CellsObject) => {
                 if (event.key === e.key.toLowerCase()) {
                     if (total === cellTotalCouter) {
                         alert("Contagem finalizada")
                         return;
                     };
-                    setCellList(atual => atual.map(iten => {
+                    setCellList((atual: CellsObject[]) => atual.map(iten => {
                         if (iten.key === e.key) {
                             if (e.cell != "Eritroblastos") setTotal(atual => atual + 1)
                             return { ...iten, value: e.value + 1 }
@@ -31,7 +32,7 @@ const useCounter = (type: "full" | "simple" | "custom") => {
                 }
                 if (event.key === e.key) {
 
-                    setCellList(atual => atual.map(iten => {
+                    setCellList((atual : CellsObject[]) => atual.map(iten => {
                         if (iten.key === e.key) {
                             if (e.value === 0 || total === 0) return iten;
                             if (e.cell !== "Eritroblastos") setTotal(atual => atual - 1);
@@ -49,4 +50,4 @@ const useCounter = (type: "full" | "simple" | "custom") => {
     return { cellList, total, setCellList, setTotal, setCellTotalCouter }
 }
 
-export default useCounter;
+export default useCounterCustom;
