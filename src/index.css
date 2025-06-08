@@ -2,10 +2,16 @@
 
 :root {
   --cor-ciano: #00999E;
+  --cor-ciano-claro: #56CCF2;
   --cor-roxo: #973C8B;
   --text-seze-s: 16px;
   --text-size-m: 20px;
   --text-size-l: 40px;
   --button-gradient: linear-gradient(0deg, #00C7D1 0%, #009CA5 100%);
+  --bg-h2: #ffffff85;
+  --azul: #0082B2;
 }
 
+* {
+  font-family: "inter", sans-serif;
+}

@@ -1,12 +1,13 @@
-interface ButtomProps {
+interface ButtonProps {
     src: string;
     alt: string;
     children: string;
+    href?: string;
 }
 
-const Buttom = ({ src, alt, children } : ButtomProps) => {
+const Buttom = ({ src, alt, children, href} : ButtonProps) => {
     return ( 
-        <a href="#" className="flex flex-col items-center" >
+        <a href={href} className="flex flex-col items-center w-100" >
             <img src={src} alt={alt} />
             <p className="text-3xl">{children}</p>
         </a>
