@@ -11,6 +11,7 @@
   --bg-h2: #ffffff85;
   --azul: #0082B2;
   --bg-custom-gradient:linear-gradient(180deg, #F9F5FD 0%, rgba(207, 203, 209, 0.703846) 42.31%, rgba(149, 146, 151, 0.3) 100%);
+  --bg-button-gradient: linear-gradient(180deg, #a0d5f8 0%, rgba(145, 211, 219, 0.704) 42.31%, rgba(84, 167, 206, 0.3) 100%);
 }
 
 * {

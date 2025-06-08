@@ -9,7 +9,6 @@ const { cellList, total, setCellList, setTotal } = useCounter("simple");
 function zero() {
         setTotal(0)
         setCellList(atual => atual.map((i) => { return { ...i, value: i.value = 0 } }))
-        
     }
 
     return ( 
