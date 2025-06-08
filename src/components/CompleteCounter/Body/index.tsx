@@ -47,7 +47,7 @@ const Body = () => {
 
     return (
         <div className="flex justify-center">
-            <div className="bg-[url(./Rectangle.png)] w-300 text-center flex flex-col rounded-4xl">
+            <div className="bg-[url(/Rectangle.png)] w-300 text-center flex flex-col rounded-4xl">
                 <div className="flex items-center text-center align-middle justify-center gap-40 max-lg:gap-10">
                     <div className="grid grid-cols-5 p-4">
                         {cellList.map((iten) => (
