@@ -6,11 +6,13 @@ import { createBrowserRouter, RouterProvider } from 'react-router'
 import CompleteCounter from './components/CompleteCounter/CompleteCounter.tsx'
 import SimpleCounter from './components/SimpleCounter/simpleCounter.tsx'
 import CustomCounter from './components/CustomCounter/CustomCounter.tsx'
+import ErrorElement from './components/ErrorElement/index.tsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>
+    element: <App/>,
+    errorElement: <ErrorElement/>
   },
   {
     path: "/completeCounter",
@@ -23,6 +25,7 @@ const router = createBrowserRouter([
   {
     path: "/customCounter",
     element: <CustomCounter/>
+    
   }
 ])
 
