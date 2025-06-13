@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
-import { cells, cellsSimple } from "../../types";
+import { cells, cellsSimple, mobileCells } from "../../types";
 
-const useCounter = (type: "full" | "simple" | "custom") => {
+const useCounter = (type: "full" | "simple" | "mobile") => {
 
     let list = cells;
 
     if (type === "simple") {
         list = cellsSimple;
+    }
+    if (type === "mobile") {
+        list = mobileCells;
     }
     
     const [cellList, setCellList] = useState(list)
@@ -42,8 +45,8 @@ const useCounter = (type: "full" | "simple" | "custom") => {
                 }
             })
         }
-        window.addEventListener("keypress", onKeyPress);
-        return () => window.removeEventListener("keypress", onKeyPress);
+        window.addEventListener("keydown", onKeyPress);
+        return () => window.removeEventListener("keydown", onKeyPress);
 
     }, [cellList])
     return { cellList, total, setCellList, setTotal, setCellTotalCouter }

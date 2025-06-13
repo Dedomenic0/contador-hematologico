@@ -74,8 +74,8 @@ const Body = () => {
                         </div>
                         <div className=" flex gap-20">
                             <Button text="Confirmar" func={zero} type="destaque"/>
-                            <Button text="Restaurar" func={restore} />
                             <Button text="Zerar contador" func={zero} />
+                            <Button text="Restaurar" func={restore} />
                         </div>
                     </div>
                 </div>

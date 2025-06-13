@@ -7,6 +7,7 @@ import CompleteCounter from './components/CompleteCounter/CompleteCounter.tsx'
 import SimpleCounter from './components/SimpleCounter/simpleCounter.tsx'
 import CustomCounter from './components/CustomCounter/CustomCounter.tsx'
 import ErrorElement from './components/ErrorElement/index.tsx'
+import MobileCouterPage from './components/Mobile/MobileCouterPage.tsx'
 
 const router = createBrowserRouter([
   {
@@ -15,17 +16,21 @@ const router = createBrowserRouter([
     errorElement: <ErrorElement/>
   },
   {
-    path: "/completeCounter",
+    path: "/completecounter",
     element: <CompleteCounter/>
   },
   {
-    path: "/simpleCounter",
+    path: "/simplecounter",
     element: <SimpleCounter/>
   },
   {
-    path: "/customCounter",
+    path: "/customcounter",
     element: <CustomCounter/>
     
+  },
+  {
+    path: "/mobilecounter",
+    element: <MobileCouterPage/>
   }
 ])
 

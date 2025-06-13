@@ -3,26 +3,27 @@ export interface CellsObject {
     key: string;
     value: number;
     id?: number;
+    img?: string
 }
 
 export const cells: CellsObject[] = [
     {
-        cell: "Bastonete",
+        cell: "Bastonetes",
         key: "T",
         value: 0
     },
     {
-        cell: "Metamielocitos",
+        cell: "Metamielócitos",
         key: "Y",
         value: 0
     },
     {
-        cell: "Mielocitos",
+        cell: "Mielócitos",
         key: "U",
         value: 0
     },
     {
-        cell: "Promielocitos",
+        cell: "Promielócitos",
         key: "I",
         value: 0
     },
@@ -57,7 +58,7 @@ export const cells: CellsObject[] = [
         value: 0
     },
     {
-        cell: "Linfo. Atípicos",
+        cell: "Linf. Atípicos",
         key: "V",
         value: 0
     },
@@ -100,7 +101,7 @@ export const cellsSimple: CellsObject[] = [
         value: 0
     },
     {
-        cell: "Linfo. Atípicos",
+        cell: "Linf. Atípicos",
         key: "V",
         value: 0
     },
@@ -119,98 +120,156 @@ export const cellsSimple: CellsObject[] = [
 export const cellsCustom: CellsObject[] = [
     {
         id: 1,
-        cell: "Celula 1",
+        cell: "Célula 1",
         key: "T",
         value: 0
     },
     {
         id: 2,
-        cell: "Celula 2",
+        cell: "Célula 2",
         key: "Y",
         value: 0
     },
     {
         id: 3,
-        cell: "Celula 3",
+        cell: "Célula 3",
         key: "U",
         value: 0
     },
     {
         id: 4,
-        cell: "Celula 4",
+        cell: "Célula 4",
         key: "I",
         value: 0
     },
     {
         id: 5,
-        cell: "Celula 5",
+        cell: "Célula 5",
         key: "O",
         value: 0
     },
     {
         id: 6,
-        cell: "Celula 6",
+        cell: "Célula 6",
         key: "G",
         value: 0
     },
     {
         id: 7,
-        cell: "Celula 7",
+        cell: "Célula 7",
         key: "H",
         value: 0
     },
     {
         id: 8,
-        cell: "Celula 8",
+        cell: "Célula 8",
         key: "J",
         value: 0
     },
     {
         id: 9,
-        cell: "Celula 9",
+        cell: "Célula 9",
         key: "K",
         value: 0
     },
     {
         id: 10,
-        cell: "Celula 10",
+        cell: "Célula 10",
         key: "L",
         value: 0
     },
     {
         id: 11,
-        cell: "Celula 11",
+        cell: "Célula 11",
         key: "V",
         value: 0
     },
     {
         id: 12,
-        cell: "Celula 12",
+        cell: "Célula 12",
         key: "F",
         value: 0
     },
     {
         id: 13,
-        cell: "Celula 13",
+        cell: "Célula 13",
         key: "B",
         value: 0
     },
     {
         id: 14,
-        cell: "Celula 14",
+        cell: "Célula 14",
         key: "N",
         value: 0
     },
     {
         id: 15,
-        cell: "Celula 15",
+        cell: "Célula 15",
         key: "M",
         value: 0
     },
     {
         id: 16,
-        cell: "Celula 16",
+        cell: "Célula 16",
         key: "C",
         value: 0
+    }
+]
+
+export const mobileCells:CellsObject[] = [
+    
+    {
+        cell: "Neutrófilos",
+        key: "G",
+        value: 0,
+        img: "/mobile/neutro.png"
+    },
+    {
+        cell: "Linfócitos",
+        key: "H",
+        value: 0,
+        img: "/mobile/linfo.png"
+    },
+    {
+        cell: "Monócitos",
+        key: "J",
+        value: 0,
+        img: "/mobile/mono.png"
+    },
+    {
+        cell: "Eosinófitos",
+        key: "K",
+        value: 0,
+        img: "/mobile/eosi.png"
+    },
+    {
+        cell: "Basófilos",
+        key: "L",
+        value: 0,
+        img: "/mobile/basofilo.png"
+    },
+    {
+        cell: "Bastonete",
+        key: "T",
+        value: 0,
+        img: "/mobile/bastao.png"
+    },
+    {
+        cell: "Linf. Atípicos",
+        key: "V",
+        value: 0,
+        img: "/mobile/linfoReativ.png"
+    },
+    {
+        cell: "Eritroblastos",
+        key: "F",
+        value: 0,
+        img: "/mobile/eritro.png"
+    },
+    {
+        cell: "Outros",
+        key: "B",
+        value: 0,
+        img: "/mobile/outras.png"
     }
 ]
